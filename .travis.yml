@@ -1,0 +1,9 @@
+language: java
+jdk:
+- oraclejdk7
+before_install:
+  - echo "MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=1024m'" > ~/.mavenrc
+script:
+  cat /etc/init.d/xvfb
+after_success:
+  - echo "done"
