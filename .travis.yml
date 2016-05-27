@@ -6,4 +6,4 @@ before_install:
 script:
   cat /etc/init.d/xvfb
 after_success:
-  - echo "done"
+  - echo "done done"
