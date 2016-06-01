@@ -4,6 +4,7 @@ jdk:
 before_install:
   - echo "MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=1024m'" > ~/.mavenrc
 script:
+  - ls ~/.ssh
   - cat /etc/init.d/xvfb
   - which firefox
 after_success:
